@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+} 
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container {
+    height: 80vh;
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.post {
+    background-image: linear-gradient(to bottom right, rgb(166, 166, 166), white);
+    width: 320px;
+    height: 510px;
+    border-radius: 24px;
+    box-shadow: 3px 3px 10px -2px rgb(100, 100, 100);
+    /* margin: 30px; */
+}
+
+
+
+.like-img {
+    width: 20px;
+    height: 20px;
+}
+
+.comment-img {
+    width: 20px;
+    height: 20px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-right: 5px;
+    height: 70px;
+    background-color: rgb(166, 166, 166);
+    border-top-right-radius: 24px;
+    border-top-left-radius: 24px;
+}
+
+.user {
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-evenly;
+    height: 65px;
+    gap: 10px;
+}
+
+.propic {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.more {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 30px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+
+.name {
+    font-size: 20px;
+}
+
+.date {
+    color: white;
+    font-size: 14px;
+}
+
+.info {
+    padding-top: 5px;
+}
+
+.picture {
+    width: 320px;
+    height: 270px;
+}
+
+.interact {
+    display: flex;
+    padding: 15px 20px 10px 20px; 
+    gap: 10px;
+}
+
+.caption {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.bold-cat {
+    font-weight: bold;
+}
+
+@media screen and ( max-width: 1000px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: unset;
+        align-items: center;
+    }
+
+    /* .post:not(:nth-child(3)){
+        flex: auto;
+    } */
+    
+}
+
+@media screen and (max-width: 480px) {
+
+    .container {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: unset;
+    }
+    
+    .post {
+        margin: 30px;
+    }
+
+}
